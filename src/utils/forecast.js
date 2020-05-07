@@ -12,7 +12,8 @@ const forecast = (longitude, latitude, callback) => {
                description: body.current.weather_descriptions[0],
                temperature: body.current.temperature,
                chance_of_rain: + body.current.precip , 
-               location: body.location.name          
+               location: body.location.name,  
+               humidity: body.current.weather_descriptions.humidity        
            })
        }
     })

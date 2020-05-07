@@ -35,7 +35,7 @@ weatherForm.addEventListener('submit', (e) => {
          }
          else {
              messageOne.textContent = 'In '+ data.location + ', it is '+ data.description + '. Current temperature is ' + data.temperature + '. There is ' + data.chance_of_rain + '% of rain'
-             messageTwo.textContent = ' '
+             messageTwo.textContent = 'and current humidity is ' + data.humidity
              // console.log(data.description)
             //  console.log(data.temperature)
             //  console.log(data.chance_of_rain)
